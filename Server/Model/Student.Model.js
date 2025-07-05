@@ -2,8 +2,7 @@ const mongoose = require("mongoose");
 
 let StudentSchema = new mongoose.Schema({
     Course_id: {
-        type: String,
-        required: true
+        type: String
     },
     Name: {
         type: String,
@@ -18,7 +17,10 @@ let StudentSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-
+    Enrollment:{
+        type:Boolean,
+        default:false
+    }
 });
 
 let StudentModel=mongoose.model("Student",StudentSchema);

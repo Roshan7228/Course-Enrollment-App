@@ -62,6 +62,9 @@ let CourseController = {
                 message: error.message
             })
         }
+
+
+
     }
 };
 
